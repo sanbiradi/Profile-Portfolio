@@ -428,3 +428,19 @@ color: #102430;
     font-weight: 600;
     color: #0E2431;
 }
+
+
+/*Media Queries*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.nav{
+    display: none;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav{
+        display: block;
+    }
+}
