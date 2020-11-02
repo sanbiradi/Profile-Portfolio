@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+/* defualt values reset*/
+body,ul{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0px auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+/* css for navigation element */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow:0 1px 4px rgba(146,161,176,.15);
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+.brand-name{
+    float: left;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 999;
+    height: 70px;
+    color: #0E2431;
+    line-height:70px;
+}
+.nav{
+    float: right;
+    display: block;
+}
+.header ul{
+    list-style: none;
+    margin: 0px;
+}
+.header ul li{
+    display: inline;
+    height: 70px;
+    line-height: 70px;
+    margin: 10px 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    padding: 10px 0ex;
+    color: #0E2431;
+    border-bottom: 2px solid transparent;
+}
+.header ul li a:hover{
+    border-bottom: 2px solid #4070F4;
+    transition: .2s ease-in;
+}
+/* end navigation*/
+
+.main-banner{
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+}
+
+.main-banner p,.intro-name,.intro-name1{
+    font-size: 50px;
+    font-family: Poppins;
+    text-align: left;
+    
+    font-weight: 900;
+    word-spacing: 12px;
+    color:#0E2431 ;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.main-banner p span{
+    color: #4070F4;
+    font-family:Poppins;
+}
+
+.intro{
+    float: left;
+    margin: 100px 0;    
+}
+
+.contact-btn{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color:#4070F4;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+    border: #4070F4;
+    border-radius: 10px;
+}
+.contact-btn:hover{
+    box-shadow:0 10px 36px rgba(0,0,0,.15)
+}
+.social{
+    margin-top: 100px;
+}
+.social img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right:30px;
+    transition: all .3s ease-in;
+    border:3px solid transparent;
+    padding-bottom: 10px;
+}
+.social img:hover{
+    border-bottom:3px solid #4070F4;
+    transition: all .3s ease-in;
+}
+.me{
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-top: 100px;
+}
+/*end the  main intro section
+
+start the about main section
+*/
+.main-about{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.section-title{
+    font-size: 30px;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    word-spacing: 12px;
+    color:#4070F4;
+    border-bottom: 2px solid #4070F4;    
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.about,.skill,.work{
+    margin: 50px 0;   
+}
+.col-left{
+    width: 50%;
+    float: left;
+}
+.col-right{
+    width:50%;
+    float: right;
+}
+.about img{
+    width: 300px;
+    height:500px;
+    border-radius: 15px;
+}
+.about p,.skill p,.headline{
+    text-align: left;
+    float: left;
+    opacity: 0.7;
+    visibility: visible;
+    width: auto;
+    font-size: 15px;
+}
+.intro-name{
+    float: left;
+    font-size: 30px;
+    margin-top: 150px;
+}
+/*skill section start*/
+.skill-section{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}
+.intro-name1{
+    float: left;
+    font-size: 30px;
+}
+
+.skills-data{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    color: #424f57;
+    width: 100%;
+}
+.skills-html{
+    width: 80%;
+}
+.skills-css{
+    width: 60%;
+}
+.skills-js{
+    width:25%;
+}
+.skills-ui-ux{
+    width: 60%;
+}
+.bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+}
+
+.bxl-html:before {
+    content: "\e92e";
+}
+.bxl-css:before {
+    content: "\e912";
+}
+.bxl-js:before {
+    content: "\e934";
+}
+.bxl-ui-ux:before {
+    content: "\ee10";
+}
+.skills-names{
+    display: flex;
+}
+.skills-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #4070F4;
+}
+.skills-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #4070F4;
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: -10;
+}
+.skill img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+/*work section start*/
+.work-section{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 100px;
+}
+.bd-grid{
+    display:grid;
+    grid-template-columns: auto auto auto;  
+}
+.work-img{
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    position: relative;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden;
+}
+.work-img img{
+    width: 100%;
+    height:250px;
+    display: block;
+    transition:1s;
+    cursor: pointer;
+}
+.work-img:hover img{
+    transform: scale(1.1);
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14,36,49,.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.text{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index:1;
+}
+.text p{
+    margin: 0px;
+}
+.text h3::before{
+    content: " ";
+    display: block;
+    width: 50%;
+    position: relative;
+    top: 35px;
+    left: 25%;
+    bottom: 0px;
+    height: 1px;
+    background-color: whitesmoke;
+}
+.work-img:hover .overlay{
+    background-color: rgba(14,36,49,.9);
+}
+.btn{
+    display: flex;
+}
+.visit,.code{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    margin: 15px;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    outline: 0;
+    border:0.1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.visit:hover,.code:hover{
+background-color: white;
+color: #102430;
+}
+/*contact section css*/
+
+.contact-section{
+    text-align: center;
+}
+.contact__input {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid #0E2431;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.contact-section form{
+    width: 360px;
+}
+.bd-grid1{
+    margin-top: 4rem;
+    width: calc(100% - 2rem);
+}
+.contact-form{
+    margin: 0 auto;
+}
+.button{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Poppins',sans-serif;
+    background-color: #4070F4;
+    outline: 0;
+    border: 0.1px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+.footer{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #0E2431;
+    height:150px;
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+}
+.footer-social{
+    display: block;
+}
+.footer h3{
+    font-family: 'Comfortaa'
+}
+.footer-social i{
+    font-size: 1.5rem;
+    color: #fff;
+    margin:10px;
+}
+.headline{
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #0E2431;
+}
